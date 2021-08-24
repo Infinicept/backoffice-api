@@ -1,7 +1,7 @@
 {
   "swagger" : "2.0",
   "info" : {
-    "description" : "Last Updated: 2021-08-20",
+    "description" : "Last Updated: 2021-08-23",
     "version" : "1.0.0",
     "title" : "BackOffice API"
   },
@@ -78,6 +78,21 @@
             "enum" : [ "TransferTo", "TransferFrom" ]
           },
           "collectionFormat" : "multi"
+        }, {
+          "name" : "CurrentPage",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int32"
+        }, {
+          "name" : "PageSize",
+          "in" : "query",
+          "required" : false,
+          "type" : "integer",
+          "default" : 100,
+          "maximum" : 100,
+          "minimum" : 1,
+          "format" : "int32"
         }, {
           "name" : "tenantId",
           "in" : "path",
@@ -564,6 +579,9 @@
           "in" : "query",
           "required" : false,
           "type" : "integer",
+          "default" : 1000,
+          "maximum" : 1000,
+          "minimum" : 1,
           "format" : "int32"
         }, {
           "name" : "FieldName",
@@ -1249,6 +1267,9 @@
           "in" : "query",
           "required" : false,
           "type" : "integer",
+          "default" : 1000,
+          "maximum" : 1000,
+          "minimum" : 1,
           "format" : "int32"
         }, {
           "name" : "DateFilter",
@@ -1523,6 +1544,9 @@
           "in" : "query",
           "required" : false,
           "type" : "integer",
+          "default" : 1000,
+          "maximum" : 1000,
+          "minimum" : 1,
           "format" : "int32"
         }, {
           "name" : "tenantId",
@@ -1708,6 +1732,9 @@
           "in" : "query",
           "required" : false,
           "type" : "integer",
+          "default" : 40,
+          "maximum" : 40,
+          "minimum" : 1,
           "format" : "int32"
         }, {
           "name" : "tenantId",
@@ -1877,6 +1904,9 @@
           "in" : "query",
           "required" : false,
           "type" : "integer",
+          "default" : 1000,
+          "maximum" : 1000,
+          "minimum" : 1,
           "format" : "int32"
         }, {
           "name" : "FieldName",
@@ -2055,6 +2085,9 @@
           "in" : "query",
           "required" : false,
           "type" : "integer",
+          "default" : 1000,
+          "maximum" : 1000,
+          "minimum" : 1,
           "format" : "int32"
         }, {
           "name" : "AccountStatus",
@@ -2172,6 +2205,9 @@
           "in" : "query",
           "required" : false,
           "type" : "integer",
+          "default" : 1000,
+          "maximum" : 1000,
+          "minimum" : 1,
           "format" : "int32"
         }, {
           "name" : "noMID",
@@ -2477,6 +2513,9 @@
           "in" : "query",
           "required" : false,
           "type" : "integer",
+          "default" : 50,
+          "maximum" : 50,
+          "minimum" : 1,
           "format" : "int32"
         }, {
           "name" : "FieldName",
@@ -2611,6 +2650,9 @@
           "in" : "query",
           "required" : false,
           "type" : "integer",
+          "default" : 50,
+          "maximum" : 50,
+          "minimum" : 1,
           "format" : "int32"
         }, {
           "name" : "FieldName",
@@ -2694,6 +2736,9 @@
           "in" : "query",
           "required" : false,
           "type" : "integer",
+          "default" : 50,
+          "maximum" : 50,
+          "minimum" : 1,
           "format" : "int32"
         }, {
           "name" : "sortOrder",
@@ -2943,6 +2988,9 @@
           "in" : "query",
           "required" : false,
           "type" : "integer",
+          "default" : 1000,
+          "maximum" : 1000,
+          "minimum" : 1,
           "format" : "int32"
         }, {
           "name" : "FieldName",
@@ -3073,6 +3121,9 @@
           "in" : "query",
           "required" : false,
           "type" : "integer",
+          "default" : 50,
+          "maximum" : 50,
+          "minimum" : 1,
           "format" : "int32"
         }, {
           "name" : "DateFilter",
@@ -3306,6 +3357,9 @@
           "in" : "query",
           "required" : false,
           "type" : "integer",
+          "default" : 1000,
+          "maximum" : 1000,
+          "minimum" : 1,
           "format" : "int32"
         }, {
           "name" : "FieldName",
@@ -3863,6 +3917,9 @@
           "in" : "query",
           "required" : false,
           "type" : "integer",
+          "default" : 1000,
+          "maximum" : 1000,
+          "minimum" : 1,
           "format" : "int32"
         }, {
           "name" : "FieldName",
@@ -4798,6 +4855,9 @@
           "in" : "query",
           "required" : false,
           "type" : "integer",
+          "default" : 1000,
+          "maximum" : 1000,
+          "minimum" : 1,
           "format" : "int32"
         }, {
           "name" : "FieldName",
