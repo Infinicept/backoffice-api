@@ -1,7 +1,7 @@
 {
   "swagger" : "2.0",
   "info" : {
-    "description" : "Last Updated: 2021-08-23",
+    "description" : "Last Updated: 2021-08-27",
     "version" : "1.0.0",
     "title" : "BackOffice API"
   },
@@ -5466,157 +5466,6 @@
           }
         }
       }
-    },
-    "/{tenantId}/webhooks" : {
-      "get" : {
-        "tags" : [ "Webhooks" ],
-        "summary" : "Review all webhooks",
-        "produces" : [ "application/json" ],
-        "parameters" : [ {
-          "name" : "x-AuthenticationKeyId",
-          "in" : "header",
-          "required" : true,
-          "type" : "string"
-        }, {
-          "name" : "x-AuthenticationKeyValue",
-          "in" : "header",
-          "required" : true,
-          "type" : "string"
-        }, {
-          "name" : "tenantId",
-          "in" : "path",
-          "required" : true,
-          "type" : "string"
-        } ],
-        "responses" : {
-          "200" : {
-            "description" : "Success",
-            "schema" : {
-              "type" : "array",
-              "items" : {
-                "$ref" : "#/definitions/WebhookSubscriptionResponse"
-              }
-            }
-          }
-        }
-      },
-      "post" : {
-        "tags" : [ "Webhooks" ],
-        "summary" : "Create a webhook",
-        "consumes" : [ "application/json-patch+json", "application/json", "text/json", "application/*+json" ],
-        "produces" : [ "application/json" ],
-        "parameters" : [ {
-          "name" : "x-AuthenticationKeyId",
-          "in" : "header",
-          "required" : true,
-          "type" : "string"
-        }, {
-          "name" : "x-AuthenticationKeyValue",
-          "in" : "header",
-          "required" : true,
-          "type" : "string"
-        }, {
-          "name" : "tenantId",
-          "in" : "path",
-          "required" : true,
-          "type" : "string"
-        }, {
-          "in" : "body",
-          "name" : "body",
-          "required" : false,
-          "schema" : {
-            "$ref" : "#/definitions/WriteWebhookSubscription"
-          }
-        } ],
-        "responses" : {
-          "200" : {
-            "description" : "Success",
-            "schema" : {
-              "$ref" : "#/definitions/CommandInfoResponse"
-            }
-          }
-        }
-      }
-    },
-    "/{tenantId}/webhooks/{subscriptionId}" : {
-      "get" : {
-        "tags" : [ "Webhooks" ],
-        "summary" : "Review a single webhook",
-        "produces" : [ "application/json" ],
-        "parameters" : [ {
-          "name" : "x-AuthenticationKeyId",
-          "in" : "header",
-          "required" : true,
-          "type" : "string"
-        }, {
-          "name" : "x-AuthenticationKeyValue",
-          "in" : "header",
-          "required" : true,
-          "type" : "string"
-        }, {
-          "name" : "subscriptionId",
-          "in" : "path",
-          "required" : true,
-          "type" : "integer",
-          "format" : "int32"
-        }, {
-          "name" : "tenantId",
-          "in" : "path",
-          "required" : true,
-          "type" : "string"
-        } ],
-        "responses" : {
-          "200" : {
-            "description" : "Success",
-            "schema" : {
-              "$ref" : "#/definitions/WebhookSubscriptionResponse"
-            }
-          }
-        }
-      },
-      "put" : {
-        "tags" : [ "Webhooks" ],
-        "summary" : "Update Webhook",
-        "consumes" : [ "application/json-patch+json", "application/json", "text/json", "application/*+json" ],
-        "produces" : [ "application/json" ],
-        "parameters" : [ {
-          "name" : "x-AuthenticationKeyId",
-          "in" : "header",
-          "required" : true,
-          "type" : "string"
-        }, {
-          "name" : "x-AuthenticationKeyValue",
-          "in" : "header",
-          "required" : true,
-          "type" : "string"
-        }, {
-          "name" : "subscriptionId",
-          "in" : "path",
-          "required" : true,
-          "type" : "integer",
-          "format" : "int32"
-        }, {
-          "name" : "tenantId",
-          "in" : "path",
-          "required" : true,
-          "type" : "string"
-        }, {
-          "in" : "body",
-          "name" : "body",
-          "required" : false,
-          "schema" : {
-            "$ref" : "#/definitions/WriteWebhookSubscription"
-          }
-        } ],
-        "responses" : {
-          "200" : {
-            "description" : "Success",
-            "schema" : {
-              "$ref" : "#/definitions/CommandInfoResponse"
-            }
-          }
-        }
-      }
     }
   },
   "definitions" : {
@@ -7447,7 +7296,120 @@
         "modelAsString" : false
       }
     },
-    "FeeProfile" : {
+    "FeeProfileRequest" : {
+      "type" : "object",
+      "properties" : {
+        "type" : {
+          "$ref" : "#/definitions/FeeProfileType"
+        },
+        "discountRate" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "transactionFee" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "cardNotPresentFee" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "cardNotPresentRate" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "debitCardTransactionFee" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "debitCardTransactionRate" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "monthlyFee" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "visaMastercardRate" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "visaMastercardFee" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "discoverFee" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "discoverRate" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "amexRate" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "amexFee" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "chargebackFee" : {
+          "type" : "number",
+          "format" : "double",
+          "description" : "The fee charged to Submerchant by Infinicept client for Chargeback money movement. Calculated using merchant Fee Profile information and reported by Infinicept."
+        },
+        "gatewayFee" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "batchFee" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "returnFee" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "feeBilling" : {
+          "$ref" : "#/definitions/FeeBillingType"
+        },
+        "amexStatus" : {
+          "$ref" : "#/definitions/AmexStatus"
+        },
+        "chargePayfacFeeOnRefunds" : {
+          "type" : "boolean"
+        },
+        "assessExclusivelyPerItemAmountOnRefunds" : {
+          "type" : "boolean"
+        },
+        "interchangeFeeAssessor" : {
+          "$ref" : "#/definitions/Assessor"
+        },
+        "processorFeeAssessor" : {
+          "$ref" : "#/definitions/Assessor"
+        },
+        "assessmentFeeAssessor" : {
+          "$ref" : "#/definitions/Assessor"
+        },
+        "commissionFeeAssessor" : {
+          "$ref" : "#/definitions/Assessor"
+        },
+        "achTransactionFee" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "achTransactionRate" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "achReturnFee" : {
+          "type" : "number",
+          "format" : "double"
+        }
+      }
+    },
+    "FeeProfileResult" : {
       "type" : "object",
       "properties" : {
         "id" : {
@@ -7852,7 +7814,7 @@
           "type" : "string"
         },
         "feeProfile" : {
-          "$ref" : "#/definitions/FeeProfile"
+          "$ref" : "#/definitions/FeeProfileResult"
         },
         "feeProfileExt" : {
           "$ref" : "#/definitions/FeeProfileExt"
@@ -8132,7 +8094,7 @@
           "type" : "boolean"
         },
         "feeProfile" : {
-          "$ref" : "#/definitions/FeeProfile"
+          "$ref" : "#/definitions/FeeProfileRequest"
         },
         "feeProfileExt" : {
           "$ref" : "#/definitions/FeeProfileExt"
@@ -10076,57 +10038,6 @@
       "x-ms-enum" : {
         "name" : "AuthenticationMethod",
         "modelAsString" : false
-      }
-    },
-    "WebhookSubscriptionResponse" : {
-      "type" : "object",
-      "properties" : {
-        "id" : {
-          "type" : "integer",
-          "format" : "int32"
-        },
-        "type" : {
-          "$ref" : "#/definitions/BackofficeWebhookType"
-        },
-        "destinationURL" : {
-          "type" : "string"
-        },
-        "authenticationMethod" : {
-          "$ref" : "#/definitions/AuthenticationMethod"
-        }
-      }
-    },
-    "WebhookAuthenticationData" : {
-      "type" : "object",
-      "required" : [ "password", "sharedSecret", "username" ],
-      "properties" : {
-        "method" : {
-          "$ref" : "#/definitions/AuthenticationMethod"
-        },
-        "username" : {
-          "type" : "string"
-        },
-        "password" : {
-          "type" : "string"
-        },
-        "sharedSecret" : {
-          "type" : "string"
-        }
-      }
-    },
-    "WriteWebhookSubscription" : {
-      "type" : "object",
-      "required" : [ "authenticationMethod" ],
-      "properties" : {
-        "type" : {
-          "$ref" : "#/definitions/BackofficeWebhookType"
-        },
-        "destinationURL" : {
-          "type" : "string"
-        },
-        "authenticationMethod" : {
-          "$ref" : "#/definitions/WebhookAuthenticationData"
-        }
       }
     }
   },
