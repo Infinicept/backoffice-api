@@ -3215,9 +3215,10 @@
         }, {
           "name" : "riskExceptionBatchDate",
           "in" : "path",
+          "description" : "Format: YYYY-MM-DD",
           "required" : true,
           "type" : "string",
-          "format" : "date-time"
+          "format" : "date"
         }, {
           "name" : "tenantId",
           "in" : "path",
