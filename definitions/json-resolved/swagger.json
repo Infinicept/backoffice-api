@@ -13,7 +13,6 @@
       "get" : {
         "tags" : [ "Adjustments" ],
         "summary" : "Request All Adjustments",
-        "operationId" : "adjustments_get_all",
         "produces" : [ "application/json" ],
         "parameters" : [ {
           "name" : "x-AuthenticationKeyId",
@@ -112,7 +111,6 @@
       "post" : {
         "tags" : [ "Adjustments" ],
         "summary" : "Create a Manual Adjustment",
-        "operationId" : "adjustments_create",
         "consumes" : [ "application/json-patch+json", "application/json", "text/json", "application/*+json" ],
         "produces" : [ "application/json" ],
         "parameters" : [ {
@@ -158,7 +156,6 @@
       "get" : {
         "tags" : [ "Adjustments" ],
         "summary" : "Request Adjustment by ID",
-        "operationId" : "adjustments_get_by_id",
         "produces" : [ "application/json" ],
         "parameters" : [ {
           "name" : "x-AuthenticationKeyId",
@@ -196,7 +193,6 @@
       "get" : {
         "tags" : [ "Chargebacks" ],
         "summary" : "Review Paginated Chargebacks",
-        "operationId" : "chargeBacks_get_paginated",
         "produces" : [ "application/json" ],
         "parameters" : [ {
           "name" : "x-AuthenticationKeyId",
@@ -617,7 +613,6 @@
       "get" : {
         "tags" : [ "Chargebacks" ],
         "summary" : "Review a Single Chargeback",
-        "operationId" : "chargeBacks_get_by_id",
         "produces" : [ "application/json" ],
         "parameters" : [ {
           "name" : "x-AuthenticationKeyId",
@@ -655,7 +650,6 @@
       "get" : {
         "tags" : [ "Chargebacks" ],
         "summary" : "Review a Chargeback's Documents",
-        "operationId" : "chargeBacks_get_all_documents",
         "produces" : [ "application/json" ],
         "parameters" : [ {
           "name" : "x-AuthenticationKeyId",
@@ -694,7 +688,6 @@
       "post" : {
         "tags" : [ "Chargebacks" ],
         "summary" : "Upload Chargeback Document",
-        "operationId" : "chargeBacks_create_document",
         "consumes" : [ "application/json-patch+json", "application/json", "text/json", "application/*+json" ],
         "produces" : [ "application/json" ],
         "parameters" : [ {
@@ -740,7 +733,6 @@
       "get" : {
         "tags" : [ "Chargebacks" ],
         "summary" : "Review a Chargeback's Document",
-        "operationId" : "chargeBacks_get_document_by_documentId",
         "parameters" : [ {
           "name" : "x-AuthenticationKeyId",
           "in" : "header",
@@ -780,7 +772,6 @@
       "post" : {
         "tags" : [ "Chargebacks" ],
         "summary" : "Delete a Chargeback Document",
-        "operationId" : "chargeBacks_delete_document",
         "consumes" : [ "application/json-patch+json", "application/json", "text/json", "application/*+json" ],
         "produces" : [ "application/json" ],
         "parameters" : [ {
@@ -826,7 +817,6 @@
       "post" : {
         "tags" : [ "Chargebacks" ],
         "summary" : "Change a Chargeback Status",
-        "operationId" : "chargeBacks_update_status",
         "consumes" : [ "application/json-patch+json", "application/json", "text/json", "application/*+json" ],
         "produces" : [ "application/json" ],
         "parameters" : [ {
@@ -878,7 +868,6 @@
       "get" : {
         "tags" : [ "Chargebacks" ],
         "summary" : "Review a Chargeback Note",
-        "operationId" : "chargeBacks_get_chargeback_notes",
         "produces" : [ "application/json" ],
         "parameters" : [ {
           "name" : "x-AuthenticationKeyId",
@@ -917,7 +906,6 @@
       "post" : {
         "tags" : [ "Chargebacks" ],
         "summary" : "Create a Chargeback Note",
-        "operationId" : "chargeBacks_create_note",
         "consumes" : [ "application/json-patch+json", "application/json", "text/json", "application/*+json" ],
         "produces" : [ "application/json" ],
         "parameters" : [ {
@@ -963,7 +951,6 @@
       "post" : {
         "tags" : [ "Chargebacks" ],
         "summary" : "Update Chargeback Note",
-        "operationId" : "chargeBacks_update_note",
         "consumes" : [ "application/json-patch+json", "application/json", "text/json", "application/*+json" ],
         "produces" : [ "application/json" ],
         "parameters" : [ {
@@ -1009,7 +996,6 @@
       "post" : {
         "tags" : [ "Chargebacks" ],
         "summary" : "Delete a Chargeback Note",
-        "operationId" : "chargeBacks_delete_note",
         "consumes" : [ "application/json-patch+json", "application/json", "text/json", "application/*+json" ],
         "produces" : [ "application/json" ],
         "parameters" : [ {
@@ -1055,7 +1041,6 @@
       "post" : {
         "tags" : [ "Chargebacks" ],
         "summary" : "Update Chargeback Notifications Setting",
-        "operationId" : "chargebBacks_initiate_notification",
         "produces" : [ "application/json" ],
         "parameters" : [ {
           "name" : "x-AuthenticationKeyId",
@@ -1093,7 +1078,6 @@
       "post" : {
         "tags" : [ "Chargebacks" ],
         "summary" : "Create a Notification to Submerchant for a Single Chargeback",
-        "operationId" : "chargeBacks_create_notification",
         "produces" : [ "application/json" ],
         "parameters" : [ {
           "name" : "x-AuthenticationKeyId",
@@ -1136,7 +1120,6 @@
       "get" : {
         "tags" : [ "Chargebacks" ],
         "summary" : "Review Chargeback History",
-        "operationId" : "chargeBacks_get_history_by_chargebackId",
         "produces" : [ "application/json" ],
         "parameters" : [ {
           "name" : "x-AuthenticationKeyId",
@@ -1177,7 +1160,6 @@
       "get" : {
         "tags" : [ "Commands" ],
         "summary" : "Request Status of Queued Request",
-        "operationId" : "commands_get_fingerprint",
         "produces" : [ "application/json" ],
         "parameters" : [ {
           "name" : "x-AuthenticationKeyId",
@@ -1215,7 +1197,6 @@
       "get" : {
         "tags" : [ "Diagnostics" ],
         "summary" : "Diagnostics_GetHeartbeat",
-        "operationId" : "diagnostics_get_heartbeat",
         "parameters" : [ ],
         "responses" : {
           "200" : {
@@ -1228,7 +1209,6 @@
       "post" : {
         "tags" : [ "FundingInstructions" ],
         "summary" : "Create Deposit",
-        "operationId" : "fundingInstructions_create_deposit",
         "produces" : [ "application/json" ],
         "parameters" : [ {
           "name" : "x-AuthenticationKeyId",
@@ -1260,7 +1240,6 @@
       "get" : {
         "tags" : [ "FundingInstructions" ],
         "summary" : "Review Paginated Deposits",
-        "operationId" : "fundingInstructions_paged_deposits",
         "produces" : [ "application/json" ],
         "parameters" : [ {
           "name" : "x-AuthenticationKeyId",
@@ -1356,7 +1335,7 @@
           "type" : "array",
           "items" : {
             "type" : "string",
-            "enum" : [ "Transactions", "Fees", "BankTransfers", "ChargebackToOperatingTransfer", "AchReturnToOperatingTransfer" ]
+            "enum" : [ "Transactions", "Fees", "BankTransfers", "ChargebackToOperatingTransfer", "AchReturnToOperatingTransfer", "ChargebackReversalPayfacToSubmerchantTransfer" ]
           },
           "collectionFormat" : "multi"
         }, {
@@ -1379,7 +1358,6 @@
       "get" : {
         "tags" : [ "FundingInstructions" ],
         "summary" : "Review Single Deposit",
-        "operationId" : "fundingInstructions_get_deposit_by_depositId",
         "produces" : [ "application/json" ],
         "parameters" : [ {
           "name" : "x-AuthenticationKeyId",
@@ -1421,7 +1399,6 @@
       "post" : {
         "tags" : [ "FundingInstructions" ],
         "summary" : "Submit Deposit",
-        "operationId" : "fundingInstructions_submit_deposit",
         "produces" : [ "application/json" ],
         "parameters" : [ {
           "name" : "x-AuthenticationKeyId",
@@ -1465,7 +1442,6 @@
       "get" : {
         "tags" : [ "FundingInstructions" ],
         "summary" : "Review submitted deposits for a Submerchant.",
-        "operationId" : "fundingInstructions_get_submerchant_deposits_by_FundingDepositId",
         "produces" : [ "application/json" ],
         "parameters" : [ {
           "name" : "x-AuthenticationKeyId",
@@ -1544,7 +1520,7 @@
           "type" : "array",
           "items" : {
             "type" : "string",
-            "enum" : [ "Transactions", "Fees", "BankTransfers", "ChargebackToOperatingTransfer", "AchReturnToOperatingTransfer" ]
+            "enum" : [ "Transactions", "Fees", "BankTransfers", "ChargebackToOperatingTransfer", "AchReturnToOperatingTransfer", "ChargebackReversalPayfacToSubmerchantTransfer" ]
           },
           "collectionFormat" : "multi"
         }, {
@@ -1557,6 +1533,21 @@
             "format" : "int32"
           },
           "collectionFormat" : "multi"
+        }, {
+          "name" : "SubmerchantIds",
+          "in" : "query",
+          "required" : false,
+          "type" : "array",
+          "items" : {
+            "type" : "integer",
+            "format" : "int32"
+          },
+          "collectionFormat" : "multi"
+        }, {
+          "name" : "HasChargebacks",
+          "in" : "query",
+          "required" : false,
+          "type" : "boolean"
         }, {
           "name" : "CurrentPage",
           "in" : "query",
@@ -1592,7 +1583,6 @@
       "post" : {
         "tags" : [ "FundingInstructions" ],
         "summary" : "Review and Submit Deposits",
-        "operationId" : "fundingInstructions_create_and_submit_deposit",
         "produces" : [ "application/json" ],
         "parameters" : [ {
           "name" : "x-AuthenticationKeyId",
@@ -1624,7 +1614,6 @@
       "get" : {
         "tags" : [ "FundingInstructions" ],
         "summary" : "View Bank Accounts",
-        "operationId" : "fundingInstructions_get_bankaccounts",
         "produces" : [ "application/json" ],
         "parameters" : [ {
           "name" : "x-AuthenticationKeyId",
@@ -1657,7 +1646,6 @@
       "post" : {
         "tags" : [ "FundingInstructions" ],
         "summary" : "Transfer Funds Between Accounts",
-        "operationId" : "fundingInstructions_creates_fundstransfer",
         "consumes" : [ "application/json-patch+json", "application/json", "text/json", "application/*+json" ],
         "produces" : [ "application/json" ],
         "parameters" : [ {
@@ -1697,7 +1685,6 @@
       "get" : {
         "tags" : [ "FundingInstructions" ],
         "summary" : "View Daily Deposit by Submerchant",
-        "operationId" : "fundingInstructions_get_dailydeposits_by_submerchantId",
         "produces" : [ "application/json" ],
         "parameters" : [ {
           "name" : "x-AuthenticationKeyId",
@@ -1784,7 +1771,6 @@
       "get" : {
         "tags" : [ "FundingReturn" ],
         "summary" : "Review all Funding Returns/Failures",
-        "operationId" : "fundingReturn_get_failures",
         "produces" : [ "application/json" ],
         "parameters" : [ {
           "name" : "x-AuthenticationKeyId",
@@ -1967,7 +1953,6 @@
       "get" : {
         "tags" : [ "Merchant" ],
         "summary" : "Review Submerchant Information",
-        "operationId" : "merchant_get_subMerchantId_details",
         "produces" : [ "application/json" ],
         "parameters" : [ {
           "name" : "x-AuthenticationKeyId",
@@ -2011,13 +1996,47 @@
             }
           }
         }
+      },
+      "delete" : {
+        "tags" : [ "Merchant" ],
+        "summary" : "Disable a Submerchant",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "x-AuthenticationKeyId",
+          "in" : "header",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "x-AuthenticationKeyValue",
+          "in" : "header",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "submerchantId",
+          "in" : "path",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int32"
+        }, {
+          "name" : "tenantId",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "schema" : {
+              "$ref" : "#/definitions/CommandInfoResponse"
+            }
+          }
+        }
       }
     },
     "/{tenantId}/merchant/identifier/{submerchantIdentifier}" : {
       "get" : {
         "tags" : [ "Merchant" ],
         "summary" : "Review Submerchant Information by Identifier",
-        "operationId" : "merchant_get_subMerchant_details_by_Identifier",
         "produces" : [ "application/json" ],
         "parameters" : [ {
           "name" : "x-AuthenticationKeyId",
@@ -2048,49 +2067,12 @@
             }
           }
         }
-      },
-      "delete" : {
-        "tags" : [ "Merchant" ],
-        "summary" : "Disable a Submerchant",
-        "operationId" : "merchant_submerchantId_disable",
-        "produces" : [ "application/json" ],
-        "parameters" : [ {
-          "name" : "x-AuthenticationKeyId",
-          "in" : "header",
-          "required" : true,
-          "type" : "string"
-        }, {
-          "name" : "x-AuthenticationKeyValue",
-          "in" : "header",
-          "required" : true,
-          "type" : "string"
-        }, {
-          "name" : "submerchantIdentifier",
-          "in" : "path",
-          "required" : true,
-          "type" : "integer",
-          "format" : "int32"
-        }, {
-          "name" : "tenantId",
-          "in" : "path",
-          "required" : true,
-          "type" : "string"
-        } ],
-        "responses" : {
-          "200" : {
-            "description" : "Success",
-            "schema" : {
-              "$ref" : "#/definitions/CommandInfoResponse"
-            }
-          }
-        }
       }
     },
     "/{tenantId}/merchant/paginated" : {
       "get" : {
         "tags" : [ "Merchant" ],
         "summary" : "View Paginated Submerchants",
-        "operationId" : "merchant_get_all_submerchants",
         "produces" : [ "application/json" ],
         "parameters" : [ {
           "name" : "x-AuthenticationKeyId",
@@ -2216,7 +2198,6 @@
       "get" : {
         "tags" : [ "Merchant" ],
         "summary" : "Review Paginated MID Summaries",
-        "operationId" : "merchant_get_all_mids",
         "produces" : [ "application/json" ],
         "parameters" : [ {
           "name" : "x-AuthenticationKeyId",
@@ -2275,7 +2256,6 @@
       "put" : {
         "tags" : [ "Merchant" ],
         "summary" : "Hold a Submerchant",
-        "operationId" : "merchant_submerchantId_hold",
         "produces" : [ "application/json" ],
         "parameters" : [ {
           "name" : "x-AuthenticationKeyId",
@@ -2313,7 +2293,6 @@
       "put" : {
         "tags" : [ "Merchant" ],
         "summary" : "Release a Held Submerchant",
-        "operationId" : "merchant_submerchantId_release",
         "produces" : [ "application/json" ],
         "parameters" : [ {
           "name" : "x-AuthenticationKeyId",
@@ -2350,8 +2329,7 @@
     "/{tenantId}/merchant/{submerchantId}/identifiers" : {
       "put" : {
         "tags" : [ "Merchant" ],
-        "summary" : "Add Submerchant idenfifier",
-        "operationId" : "merchant_submerchantId_update_identifiers",
+        "summary" : "Add Submerchant Boarding Ids",
         "consumes" : [ "application/json-patch+json", "application/json", "text/json", "application/*+json" ],
         "produces" : [ "application/json" ],
         "parameters" : [ {
@@ -2393,11 +2371,49 @@
         }
       }
     },
+    "/{tenantId}/merchant/board" : {
+      "post" : {
+        "tags" : [ "Merchant" ],
+        "summary" : "Board a Submerchant",
+        "consumes" : [ "application/json-patch+json", "application/json", "text/json", "application/*+json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "x-AuthenticationKeyId",
+          "in" : "header",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "x-AuthenticationKeyValue",
+          "in" : "header",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "tenantId",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "in" : "body",
+          "name" : "body",
+          "required" : false,
+          "schema" : {
+            "$ref" : "#/definitions/BoardSubmerchantRequest"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "schema" : {
+              "$ref" : "#/definitions/CommandInfoResponse"
+            }
+          }
+        }
+      }
+    },
     "/{tenantId}/merchant/firstauth" : {
       "post" : {
         "tags" : [ "Merchant" ],
         "summary" : "Update Merchant to First Auth",
-        "operationId" : "merchant_update_first_auth",
         "produces" : [ "application/json" ],
         "parameters" : [ {
           "name" : "x-AuthenticationKeyId",
@@ -2429,7 +2445,6 @@
       "post" : {
         "tags" : [ "Merchant" ],
         "summary" : "Update Merchant to First Transaction",
-        "operationId" : "merchant_update_first_transaction",
         "produces" : [ "application/json" ],
         "parameters" : [ {
           "name" : "x-AuthenticationKeyId",
@@ -2461,7 +2476,6 @@
       "get" : {
         "tags" : [ "PendingDeposits" ],
         "summary" : "Review Unfunded Transaction Totals by Submerchant and Settled Date",
-        "operationId" : "pendingDeposits_get_all_unfunded_totals",
         "produces" : [ "application/json" ],
         "parameters" : [ {
           "name" : "x-AuthenticationKeyId",
@@ -2588,7 +2602,6 @@
       "get" : {
         "tags" : [ "PendingDeposits" ],
         "summary" : "Review Unfunded Transaction Totals Grouped by Funding Program Type",
-        "operationId" : "pendingDeposits_get_unfunded_grouped_by_funding_program_type",
         "produces" : [ "application/json" ],
         "parameters" : [ {
           "name" : "x-AuthenticationKeyId",
@@ -2623,7 +2636,6 @@
       "get" : {
         "tags" : [ "PendingDeposits" ],
         "summary" : "Review Unfunded Transaction Summary by Funding Program Type",
-        "operationId" : "pendingDeposits_get_unfunded_by_funding_program_type",
         "produces" : [ "application/json" ],
         "parameters" : [ {
           "name" : "x-AuthenticationKeyId",
@@ -2721,7 +2733,6 @@
       "get" : {
         "tags" : [ "PendingDeposits" ],
         "summary" : "Review Unfunded Transaction Summary by Submerchant",
-        "operationId" : "pendingDeposits_get_unfundedSummary_by_funding_program_type",
         "produces" : [ "application/json" ],
         "parameters" : [ {
           "name" : "fundingProgramId",
@@ -2813,7 +2824,6 @@
       "put" : {
         "tags" : [ "PendingDeposits" ],
         "summary" : "Hold Deposit From Funding",
-        "operationId" : "pendingDeposits_hold_deposit",
         "consumes" : [ "application/json-patch+json", "application/json", "text/json", "application/*+json" ],
         "produces" : [ "application/json" ],
         "parameters" : [ {
@@ -2853,7 +2863,6 @@
       "put" : {
         "tags" : [ "PendingDeposits" ],
         "summary" : "Release Deposit For Funding",
-        "operationId" : "pendingDeposits_release_deposit",
         "consumes" : [ "application/json-patch+json", "application/json", "text/json", "application/*+json" ],
         "produces" : [ "application/json" ],
         "parameters" : [ {
@@ -2893,7 +2902,6 @@
       "get" : {
         "tags" : [ "RiskException" ],
         "summary" : "View Paginated Exception Reports",
-        "operationId" : "risk_get_all_paginated",
         "produces" : [ "application/json" ],
         "parameters" : [ {
           "name" : "x-AuthenticationKeyId",
@@ -3056,7 +3064,6 @@
       "get" : {
         "tags" : [ "RiskException" ],
         "summary" : "View Exception Reports by Risk Exception Id",
-        "operationId" : "risk_get_report_by_riskExceptionId",
         "produces" : [ "application/json" ],
         "parameters" : [ {
           "name" : "x-AuthenticationKeyId",
@@ -3094,7 +3101,6 @@
       "get" : {
         "tags" : [ "RiskException" ],
         "summary" : "View Exception Report Summaries",
-        "operationId" : "risk_get_submerchantBatch_exceptionSummary",
         "produces" : [ "application/json" ],
         "parameters" : [ {
           "name" : "x-AuthenticationKeyId",
@@ -3197,7 +3203,6 @@
       "get" : {
         "tags" : [ "RiskException" ],
         "summary" : "View a Single Submerchant Batch Risk Exception Summary",
-        "operationId" : "risk_get_submerchantBatch_exceptionSummary_by_riskExceptionBatchDate",
         "produces" : [ "application/json" ],
         "parameters" : [ {
           "name" : "x-AuthenticationKeyId",
@@ -3242,7 +3247,6 @@
       "put" : {
         "tags" : [ "RiskException" ],
         "summary" : "Create/Update an Exception Report",
-        "operationId" : "risk_create_update_definition",
         "consumes" : [ "application/json" ],
         "produces" : [ "application/json" ],
         "parameters" : [ {
@@ -3282,7 +3286,6 @@
       "get" : {
         "tags" : [ "RiskException" ],
         "summary" : "View Paginated Exception Report Definitions",
-        "operationId" : "risk_get_all_definitions",
         "produces" : [ "application/json" ],
         "parameters" : [ {
           "name" : "x-AuthenticationKeyId",
@@ -3397,7 +3400,6 @@
       "get" : {
         "tags" : [ "RiskException" ],
         "summary" : "View Exception Report Notes",
-        "operationId" : "risk_get_all_notes",
         "produces" : [ "application/json" ],
         "parameters" : [ {
           "name" : "x-AuthenticationKeyId",
@@ -3436,7 +3438,6 @@
       "post" : {
         "tags" : [ "RiskException" ],
         "summary" : "Create Exception Report Notes",
-        "operationId" : "risk_create_note",
         "consumes" : [ "application/json-patch+json", "application/json", "text/json", "application/*+json" ],
         "produces" : [ "application/json" ],
         "parameters" : [ {
@@ -3482,7 +3483,6 @@
       "post" : {
         "tags" : [ "Transaction" ],
         "summary" : "Create a Transaction",
-        "operationId" : "transactions_create_ach",
         "consumes" : [ "application/json-patch+json", "application/json", "text/json", "application/*+json" ],
         "produces" : [ "application/json" ],
         "parameters" : [ {
@@ -3522,7 +3522,6 @@
       "get" : {
         "tags" : [ "Transaction" ],
         "summary" : "Review Paginated Transactions",
-        "operationId" : "transactions_get_all_paginated",
         "produces" : [ "application/json" ],
         "parameters" : [ {
           "name" : "x-AuthenticationKeyId",
@@ -3889,6 +3888,16 @@
           "collectionFormat" : "multi"
         }, {
           "name" : "SettlementDate",
+          "in" : "query",
+          "required" : false,
+          "type" : "array",
+          "items" : {
+            "type" : "string",
+            "format" : "date-time"
+          },
+          "collectionFormat" : "multi"
+        }, {
+          "name" : "CardExpirationDate",
           "in" : "query",
           "required" : false,
           "type" : "array",
@@ -3987,6 +3996,12 @@
           "type" : "boolean",
           "default" : true
         }, {
+          "name" : "includeFullGraph",
+          "in" : "query",
+          "required" : false,
+          "type" : "boolean",
+          "default" : true
+        }, {
           "name" : "tenantId",
           "in" : "path",
           "required" : true,
@@ -4006,7 +4021,6 @@
       "get" : {
         "tags" : [ "Transaction" ],
         "summary" : "Review a Transaction",
-        "operationId" : "transactions_get_transactionId",
         "produces" : [ "application/json" ],
         "parameters" : [ {
           "name" : "x-AuthenticationKeyId",
@@ -4044,7 +4058,6 @@
       "get" : {
         "tags" : [ "Transaction" ],
         "summary" : "Review a Transaction Using Gateway and Partner Reference Numbers",
-        "operationId" : "transactions_get_by_identifier",
         "produces" : [ "application/json" ],
         "parameters" : [ {
           "name" : "x-AuthenticationKeyId",
@@ -4092,7 +4105,6 @@
       "put" : {
         "tags" : [ "Transaction" ],
         "summary" : "Hold a Transaction",
-        "operationId" : "transactions_hold_single_transaction",
         "produces" : [ "application/json" ],
         "parameters" : [ {
           "name" : "x-AuthenticationKeyId",
@@ -4130,7 +4142,6 @@
       "put" : {
         "tags" : [ "Transaction" ],
         "summary" : "Release a Transaction",
-        "operationId" : "transactions_release_transaction",
         "produces" : [ "application/json" ],
         "parameters" : [ {
           "name" : "x-AuthenticationKeyId",
@@ -4168,7 +4179,6 @@
       "put" : {
         "tags" : [ "Transaction" ],
         "summary" : "Manual Transaction Status Change",
-        "operationId" : "transactions_update_ach_transaction_status",
         "produces" : [ "application/json" ],
         "parameters" : [ {
           "name" : "x-AuthenticationKeyId",
@@ -4222,7 +4232,6 @@
       "put" : {
         "tags" : [ "Transaction" ],
         "summary" : "Hold Multiple Transactions",
-        "operationId" : "transactions_hold_multiple_transactions",
         "consumes" : [ "application/json-patch+json", "application/json", "text/json", "application/*+json" ],
         "produces" : [ "application/json" ],
         "parameters" : [ {
@@ -4266,7 +4275,6 @@
       "put" : {
         "tags" : [ "Transaction" ],
         "summary" : "Place multiple transactions on hold with filtering",
-        "operationId" : "transactions_hold_multiple_transactions_filter",
         "consumes" : [ "application/json-patch+json", "application/json", "text/json", "application/*+json" ],
         "produces" : [ "application/json" ],
         "parameters" : [ {
@@ -4306,7 +4314,6 @@
       "put" : {
         "tags" : [ "Transaction" ],
         "summary" : "Release Multiple Transactions",
-        "operationId" : "transactions_release_multiple_transactions",
         "consumes" : [ "application/json-patch+json", "application/json", "text/json", "application/*+json" ],
         "produces" : [ "application/json" ],
         "parameters" : [ {
@@ -4350,7 +4357,6 @@
       "put" : {
         "tags" : [ "Transaction" ],
         "summary" : "Release Transactions to Fund",
-        "operationId" : "transactions_release_multiple_transactions_filter",
         "consumes" : [ "application/json-patch+json", "application/json", "text/json", "application/*+json" ],
         "produces" : [ "application/json" ],
         "parameters" : [ {
@@ -4390,7 +4396,6 @@
       "get" : {
         "tags" : [ "Transaction" ],
         "summary" : "Review All Transaction for a Submerchant",
-        "operationId" : "transactions_get_by_submerchantId",
         "produces" : [ "application/json" ],
         "parameters" : [ {
           "name" : "x-AuthenticationKeyId",
@@ -4431,7 +4436,6 @@
       "get" : {
         "tags" : [ "Transaction" ],
         "summary" : "Review A Deposit",
-        "operationId" : "transactions_get_by_depositId",
         "produces" : [ "application/json" ],
         "parameters" : [ {
           "name" : "x-AuthenticationKeyId",
@@ -4472,7 +4476,6 @@
       "get" : {
         "tags" : [ "Transaction" ],
         "summary" : "Review all funable transactions",
-        "operationId" : "transactions_get_fundable",
         "produces" : [ "application/json" ],
         "parameters" : [ {
           "name" : "x-AuthenticationKeyId",
@@ -4839,6 +4842,16 @@
           "collectionFormat" : "multi"
         }, {
           "name" : "SettlementDate",
+          "in" : "query",
+          "required" : false,
+          "type" : "array",
+          "items" : {
+            "type" : "string",
+            "format" : "date-time"
+          },
+          "collectionFormat" : "multi"
+        }, {
+          "name" : "CardExpirationDate",
           "in" : "query",
           "required" : false,
           "type" : "array",
@@ -4957,7 +4970,6 @@
       "get" : {
         "tags" : [ "Transaction" ],
         "summary" : "Review count of funable transactions",
-        "operationId" : "transactions_get_fundable_count",
         "produces" : [ "application/json" ],
         "parameters" : [ {
           "name" : "x-AuthenticationKeyId",
@@ -5333,6 +5345,16 @@
           },
           "collectionFormat" : "multi"
         }, {
+          "name" : "CardExpirationDate",
+          "in" : "query",
+          "required" : false,
+          "type" : "array",
+          "items" : {
+            "type" : "string",
+            "format" : "date-time"
+          },
+          "collectionFormat" : "multi"
+        }, {
           "name" : "AdjustmentId",
           "in" : "query",
           "required" : false,
@@ -5411,7 +5433,6 @@
       "get" : {
         "tags" : [ "Transaction" ],
         "summary" : "Get Transaction Notes",
-        "operationId" : "transactions_get_notes",
         "produces" : [ "application/json" ],
         "parameters" : [ {
           "name" : "x-AuthenticationKeyId",
@@ -5450,7 +5471,6 @@
       "post" : {
         "tags" : [ "Transaction" ],
         "summary" : "Create a Transaction Note",
-        "operationId" : "transactions_create_note",
         "consumes" : [ "application/json-patch+json", "application/json", "text/json", "application/*+json" ],
         "produces" : [ "application/json" ],
         "parameters" : [ {
@@ -5857,7 +5877,7 @@
       "type" : "integer",
       "format" : "int32",
       "description" : "0 Monthly, 1 PerTransaction",
-      "enum" : [ "0", "1", "2" ],
+      "enum" : [ "0", "1" ],
       "x-ms-enum" : {
         "name" : "FeeBillingType",
         "modelAsString" : false
@@ -6360,6 +6380,24 @@
         },
         "isExternallyFunded" : {
           "type" : "boolean"
+        },
+        "fundingReturnMessage" : {
+          "type" : "string"
+        },
+        "fundingReturnDate" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "submerchantDepositIds" : {
+          "type" : "array",
+          "items" : {
+            "type" : "integer",
+            "format" : "int32"
+          }
+        },
+        "feeProfileId" : {
+          "type" : "integer",
+          "format" : "int32"
         }
       }
     },
@@ -6607,8 +6645,8 @@
     "FundingDepositType" : {
       "type" : "integer",
       "format" : "int32",
-      "description" : "0 Transactions, 1 Fees, 2 BankTransfers, 3 ChargebackToOperatingTransfer 4 AchReturnToOperatingTransfer.",
-      "enum" : [ "0", "1", "2", "3", "4" ],
+      "description" : "0 Transactions, 1 Fees, 2 BankTransfers, 3 ChargebackToOperatingTransfer 4 AchReturnToOperatingTransfer 5 ChargebackReversalPayfacToSubmerchantTransfer.",
+      "enum" : [ "0", "1", "2", "3", "4", "5" ],
       "x-ms-enum" : {
         "name" : "FundingDepositType",
         "modelAsString" : false
@@ -6767,6 +6805,10 @@
         },
         "currency" : {
           "type" : "string"
+        },
+        "transactionCount" : {
+          "type" : "integer",
+          "format" : "int32"
         }
       }
     },
@@ -7856,6 +7898,10 @@
             "$ref" : "#/definitions/Submerchant"
           }
         },
+        "parentId" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
         "parent" : {
           "$ref" : "#/definitions/Submerchant"
         },
@@ -7953,6 +7999,9 @@
         "principalEmail" : {
           "type" : "string"
         },
+        "chargebackEmail" : {
+          "type" : "string"
+        },
         "approvedMonthlyVolume" : {
           "type" : "number",
           "format" : "double"
@@ -8003,6 +8052,9 @@
           "type" : "string"
         },
         "location" : {
+          "type" : "string"
+        },
+        "address" : {
           "type" : "string"
         }
       }
@@ -8288,6 +8340,14 @@
           "type" : "integer",
           "format" : "int32"
         },
+        "inQueueChargebackReversalsAmount" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "inQueueChargebackReversalsCount" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
         "inQueueAchReturnsAmount" : {
           "type" : "number",
           "format" : "double"
@@ -8344,6 +8404,14 @@
           "type" : "integer",
           "format" : "int32"
         },
+        "heldChargebackReversalsAmount" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "heldChargebackReversalsCount" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
         "heldAchReturnsAmount" : {
           "type" : "number",
           "format" : "double"
@@ -8397,6 +8465,14 @@
           "format" : "double"
         },
         "rejectedChargebackCount" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "rejectedChargebackReversalsAmount" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "rejectedChargebackReversalsCount" : {
           "type" : "integer",
           "format" : "int32"
         },
@@ -8508,6 +8584,14 @@
           "type" : "integer",
           "format" : "int32"
         },
+        "inQueueChargebackReversalsAmount" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "inQueueChargebackReversalsCount" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
         "inQueueAchReturnsAmount" : {
           "type" : "number",
           "format" : "double"
@@ -8564,6 +8648,14 @@
           "type" : "integer",
           "format" : "int32"
         },
+        "heldChargebackReversalsAmount" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "heldChargebackReversalsCount" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
         "heldAchReturnsAmount" : {
           "type" : "number",
           "format" : "double"
@@ -8617,6 +8709,14 @@
           "format" : "double"
         },
         "rejectedChargebackCount" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "rejectedChargebackReversalsAmount" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "rejectedChargebackReversalsCount" : {
           "type" : "integer",
           "format" : "int32"
         },
@@ -8704,6 +8804,14 @@
           "type" : "integer",
           "format" : "int32"
         },
+        "inQueueChargebackReversalsAmount" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "inQueueChargebackReversalsCount" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
         "inQueueAchReturnsAmount" : {
           "type" : "number",
           "format" : "double"
@@ -8760,6 +8868,14 @@
           "type" : "integer",
           "format" : "int32"
         },
+        "heldChargebackReversalsAmount" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "heldChargebackReversalsCount" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
         "heldAchReturnsAmount" : {
           "type" : "number",
           "format" : "double"
@@ -8813,6 +8929,14 @@
           "format" : "double"
         },
         "rejectedChargebackCount" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "rejectedChargebackReversalsAmount" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "rejectedChargebackReversalsCount" : {
           "type" : "integer",
           "format" : "int32"
         },
@@ -10044,6 +10168,26 @@
           "format" : "int32"
         }
       }
+    },
+    "BackofficeWebhookType" : {
+      "type" : "integer",
+      "format" : "int32",
+      "description" : "1 TransactionsImported",
+      "enum" : [ "1" ],
+      "x-ms-enum" : {
+        "name" : "BackofficeWebhookType",
+        "modelAsString" : false
+      }
+    },
+    "AuthenticationMethod" : {
+      "type" : "integer",
+      "format" : "int32",
+      "description" : "0 None, 1 SharedSecretPlaintext, 2 Basic",
+      "enum" : [ "0", "1", "2" ],
+      "x-ms-enum" : {
+        "name" : "AuthenticationMethod",
+        "modelAsString" : false
+      }
     }
   },
   "parameters" : {
@@ -10207,7 +10351,7 @@
       "type" : "array",
       "items" : {
         "type" : "string",
-        "enum" : [ "Transactions", "Fees", "BankTransfers", "ChargebackToOperatingTransfer", "AchReturnToOperatingTransfer" ]
+        "enum" : [ "Transactions", "Fees", "BankTransfers", "ChargebackToOperatingTransfer", "AchReturnToOperatingTransfer", "ChargebackReversalPayfacToSubmerchantTransfer" ]
       },
       "collectionFormat" : "multi"
     },
