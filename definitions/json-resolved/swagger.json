@@ -1,7 +1,7 @@
 {
   "swagger" : "2.0",
   "info" : {
-    "description" : "Last Updated: 2022-02-11",
+    "description" : "Last Updated: 2022-04-13",
     "version" : "1.0.0",
     "title" : "BackOffice API"
   },
@@ -2351,6 +2351,7 @@
       "put" : {
         "tags" : [ "Merchant" ],
         "summary" : "Add Submerchant idenfifier",
+        "operationId" : "merchant_submerchantId_update_identifiers",
         "consumes" : [ "application/json-patch+json", "application/json", "text/json", "application/*+json" ],
         "produces" : [ "application/json" ],
         "parameters" : [ {
@@ -5845,8 +5846,8 @@
     "FeeProfileType" : {
       "type" : "integer",
       "format" : "int32",
-      "description" : "0 FlatRate, 1 InterchangePlus",
-      "enum" : [ "0", "1" ],
+      "description" : "0 FlatRate, 1 InterchangePlus, 2 FeeTransactions",
+      "enum" : [ "0", "1", "2" ],
       "x-ms-enum" : {
         "name" : "FeeProfileType",
         "modelAsString" : false
@@ -5855,7 +5856,7 @@
     "FeeBillingType" : {
       "type" : "integer",
       "format" : "int32",
-      "description" : "0 Monthly, 1 PerTransaction, 2 FeeTransactions",
+      "description" : "0 Monthly, 1 PerTransaction",
       "enum" : [ "0", "1", "2" ],
       "x-ms-enum" : {
         "name" : "FeeBillingType",
